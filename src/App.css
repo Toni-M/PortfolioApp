@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+:root{
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: 255 255 255 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  z-index:2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  font-family: "Roboto Condensed", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
+/*        Navbar Style     */
+.navtext1{
+  color: #61dafa;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo{
+  width: 3rem;
+}
+.nav-link{
+font-weight: 500;
+letter-spacing: 0.375;
+color:rgb(12, 79, 143);
+cursor: pointer;
+
+}
+
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.045rem;
+  text-transform: uppercase;
+  color: var(--primary-white) !important;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-bottom: 0.187rem solid var(--primary-orange);
+  border-top: 0.187rem solid var(--primary-dark);
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 0.187rem solid var(--primary-orange);
+  border-top: 0.187rem solid var(--primary-dark);
+
+}
+
+/*  Header    */
+
+
+.header-wrapper{
+  position:relative;
+  background: url(comp-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+}
+
+.main-info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.main-info h2{
+  color: var(--primary-orange);
+  margin-top: 9rem;
+text-transform: uppercase;
+}
+
+.typed-text{
+  font-size:2rem;
+  color: white;
+  margin-top:5rem;
+}
+
+.btn{
+ margin-top:5rem;
+ z-index:1;
+}
+
+.tsparticles-canvas-el{
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index:1;
+}
+
+@media(max-width: 750px){
+  .particle-canvas{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/*     About   */
+
+.about-page{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-of-me{
+  margin-top: 5rem;
+
+  margin-bottom:15rem;
+}
+.main-info1{
+  margin-top: 15rem;
+
+}
+.about2{
+  border-bottom: 0.3rem solid var(--primary-orange);
+  border-radius: 50%;
 }
