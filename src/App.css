@@ -15,6 +15,7 @@ nav{
 /*        Navbar Style     */
 .navtext1{
   color: #61dafa;
+  
 }
 
 .logo{
@@ -26,6 +27,7 @@ letter-spacing: 0.375;
 color:rgb(12, 79, 143);
 cursor: pointer;
 
+
 }
 
 nav a.nav-link{
@@ -35,17 +37,19 @@ nav a.nav-link{
   color: var(--primary-white) !important;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  
+  border-bottom: 0.187rem solid var(--primary-dark) ;
+ 
+
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus{
   border-bottom: 0.187rem solid var(--primary-orange);
-  border-top: 0.187rem solid var(--primary-dark);
+  
 }
 
 .navbar-nav > li > a:hover{
   border-bottom: 0.187rem solid var(--primary-orange);
-  border-top: 0.187rem solid var(--primary-dark);
+  
 
 }
 
@@ -66,6 +70,7 @@ nav a.nav-link{
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-bottom: 0.187rem solid var(--primary-dark);
   
 }
 
@@ -74,12 +79,14 @@ nav a.nav-link{
   color: var(--primary-orange);
   margin-top: 9rem;
 text-transform: uppercase;
+border-bottom: 0.187rem solid var(--primary-dark);
 }
 
 .typed-text{
   font-size:2rem;
   color: white;
   margin-top:5rem;
+  border-bottom: 0.187rem solid var(--primary-dark);
 }
 
 .btn{

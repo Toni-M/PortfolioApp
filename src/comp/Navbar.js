@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from "../logo.png"
 import '../App.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 
 const Navbar = () => {
@@ -11,7 +13,7 @@ const Navbar = () => {
     <a className="navbar-brand" href="#"><img className="logo" src={logo}></img></a>
     <h3 className="navtext1">@tony's</h3>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+      <FontAwesomeIcon icon={faBars}/>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav ml-auto">
