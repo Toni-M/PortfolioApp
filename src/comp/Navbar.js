@@ -13,7 +13,7 @@ const Navbar = () => {
     <a className="navbar-brand" href="#"><img className="logo" src={logo}></img></a>
     <h3 className="navtext1">@tony's</h3>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <FontAwesomeIcon icon={faBars}/>
+      <FontAwesomeIcon icon={faBars} className="fav-icon"/>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav ml-auto">

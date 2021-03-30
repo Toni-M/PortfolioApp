@@ -61,7 +61,12 @@ nav a.nav-link{
   background: url(comp-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 85vh;
+  height: 50em;
+}
+
+.fav-icon{
+  color:white;
+ 
 }
 
 .main-info{
